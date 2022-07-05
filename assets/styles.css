@@ -175,12 +175,12 @@ footer {
         float: none;
     }
 
-    .content {
+    .content, nav {
         text-align: center;
     }
 
-    nav {
-        text-align: center;
+    nav li {
+        margin-right: 1vw;
     }
 
     .contact p {
