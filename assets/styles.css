@@ -1,0 +1,198 @@
+*, ::before, ::after {
+    box-sizing: border-box;
+}
+
+body {
+    color: #1d1d1f;
+    font-family: Roboto, Exo, sans-serif;
+    line-height: 1.5;
+    margin: 0;
+}
+
+/* HEADER START */
+header {
+    color: white;
+    display: inline;
+}
+
+.jumbotron {
+    background-color: #424245;
+    padding: 60px;
+    text-align: center;
+    font-size: 15pt;
+}
+
+#logo {
+    border-radius: 50%;
+    width: 10rem;
+}
+
+nav {
+    background-color: #1d1d1f;
+    padding: 5px;
+    position: sticky;
+    text-align: right;
+    top: 0;
+}
+
+nav li {
+    display: inline;
+    list-style-type: none;
+    margin-right: 20px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+}
+
+nav a:hover {
+    font-weight: bold;
+}
+
+nav a:active {
+    color: #7c7374;
+}
+/* HEADER END */
+
+/* MAIN START */
+hr {
+    background: #1d1d1f;
+    background-image: -webkit-gradient(left, #7c7374, #1d1d1f, #7c7374);
+    background-image: -webkit-linear-gradient(left, #7c7374, #1d1d1f, #7c7374);
+    background-image: -moz-linear-gradient(left, #7c7374, #1d1d1f, #7c7374);
+    background-image: -o-linear-gradient(left, #7c7374, #1d1d1f, #7c7374);
+    margin-top: -15px;
+    max-width: 10rem;
+}
+
+main {
+    overflow: auto;
+    padding: 25px;
+}
+
+.content {
+    float: left;
+    width: 75%;
+}
+
+.about {
+    font-size: 1em;
+    overflow: auto;
+    padding: 25px;
+}
+
+.description {
+    float: left;
+    font-size: 1.5em;
+    width: 50%;
+}
+
+.about img {
+    background-position: center;
+    background-size: cover;
+    border-radius: 50%;
+    float: right;
+    width: 50%;
+}
+
+h2 {
+    text-align: center;
+}
+
+.flex-container-column {
+    display: flex;
+    flex-direction: column;
+}
+
+.flex-container-row {
+    display: flex;
+}
+
+.produk {
+    flex-grow: 1;
+    margin: 10px;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 75%;
+}
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, .2);
+}
+
+.product img {
+    width: 100%;
+}
+
+.contact {
+    padding-bottom: 30px;
+    text-align: center;
+}
+
+.contact img {
+    margin-left: 25px;
+    margin-top: 1vh;
+    width: 25px;
+}
+
+.contact p {
+    display: inline;
+    font-size: 1em;
+}
+
+.profile {
+    float: right;
+    width: 23%;
+}
+
+.profile img {
+    border-radius: 50%;
+    width: 10rem
+}
+
+aside{
+    padding: 5px;
+    text-align: center;
+}
+/* MAIN END */
+
+/* FOOTER START */
+footer {
+    background-color: #424245;
+    color: white;
+    padding: 40px;
+    text-align: center;
+}
+
+.copyright {
+    font-weight: bold;
+}
+/* FOOTER END */
+@media screen and (max-width: 1000px) {
+    .content, .profile {
+        width: 100%;
+        float: none;
+    }
+
+    .content {
+        text-align: center;
+    }
+
+    nav {
+        text-align: center;
+    }
+
+    .contact p {
+        display: block;
+    }
+
+    .contact img {
+        margin: 0
+    }
+
+    .description, .about img {
+        float: none;
+        width: 100%;
+    }
+}
